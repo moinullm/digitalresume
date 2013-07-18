@@ -2,14 +2,26 @@
 
 class HttpHelper
 {
-    public static function getRequest($uri, $method = 'GET', $headers = array(), $data = array(), $query = array())
+    public static function getRequest($uri, $method = 1, $headers = array(), $data = array(), $query = array())
     {
         $ci = & get_instance();
         $uri = $ci->config->item('service_endpoint') . $uri;
+
         $headers['Content-Type'] = 'application/json';
 
-        $request = new HttpRequest($uri, $method, $headers);
-        $request->addPostFields($data);
+        if ($method == 4){
+            $headers['Content-Type'] = 'application/x-www-form-urlencoded';
+        }
+
+        $request = new HttpRequest($uri, $method);
+        $request->setHeaders($headers);
+
+        if ($method == 4){
+            $request->addPutData(http_build_query($data));
+
+        } elseif ($method == 3) {
+            $request->addPostFields($data);
+        }
 
         return $request;
     }

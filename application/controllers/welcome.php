@@ -15,10 +15,31 @@ class Welcome extends CI_Controller
 		$this->load->view('welcome_message');
 	}
 
-    public function checkHttpRequest()
+    public function checkHttpGet()
     {
-        $httpRequest = $this->WelcomeModel->checkHttpRequest();
+        $httpGet = $this->WelcomeModel->checkHttpGet();
 
-        print_r($httpRequest);exit;
+        print_r($httpGet);exit;
+    }
+
+    public function checkHttpPost()
+    {
+        $httpPost = $this->WelcomeModel->checkHttpPost();
+
+        print_r($httpPost);exit;
+    }
+
+    public function checkHttpPut()
+    {
+        $httpPut = $this->WelcomeModel->checkHttpPut();
+
+        print_r($httpPut);exit;
+    }
+
+    public function checkHttpDelete()
+    {
+        $httpDelete = $this->WelcomeModel->checkHttpDelete();
+
+        print_r($httpDelete);exit;
     }
 }
