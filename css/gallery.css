@@ -1,0 +1,138 @@
+.all_resume_blog{
+    margin: auto;overflow: hidden;
+    width: 100%;
+}
+
+.search_blog{
+    float: right;
+    display: inline;
+    margin-top: 19px;
+}
+
+#gall{float: left;
+    display: inline;
+}
+
+.search_b{
+    background: url("../images/sub.jpg") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    display: inline;
+    float: left;
+    height: 34px;
+    overflow: hidden;
+    width: 274px;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-style: italic;
+    color: #c3c3c3;text-indent: 5px;
+}
+
+#go{
+    width:45px ;
+    height:34px;
+    cursor: pointer;
+    border: none;
+    background: url(../images/go.jpg) no-repeat;
+    margin-left: 3px;
+}
+
+.resume_sub{
+    background: url("../images/res_bg.jpg") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 18px;
+    width: 220px;
+    padding-bottom: 18px;
+}
+
+.resume_sub a img{
+    height: 285px;
+    margin: 10px;
+    width: 203px;
+}
+
+#last_r, #last_r_1, #last_r_2, #last_r_3{float: left; margin-right: 0px;}
+
+.line_blo{
+    width: 99%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px  dotted #cddfeb;
+    border-bottom: none;
+    padding-bottom: 19px;
+    border-left: none;
+    border-right: none;
+}
+
+.line_blog{
+    width: 99%;
+    margin: 19px auto;
+    overflow: hidden;
+    border: 1px  dotted #cddfeb;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.multi_button{
+    width: 214px;
+    height: 28px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 6px 6px 6px 6px;
+    background:#fdad32;
+}
+
+.multi_button ul {
+    margin-left: 17px;
+}
+
+.multi_button ul li{
+    font-family: Open Sans;
+    font-size: 13px;
+    display: inline;
+    color: #fff;
+    line-height: 27px;
+    text-align: center!important;
+    margin-left: 9px;
+}
+
+.multi_button ul li a{
+    color: #fff;
+}
+
+.multi_button ul li a:hover{
+    color: #c5c5c5;
+    text-shadow: 1px 0px #8a8a8a;
+}
+
+.detai_des{
+    font-family: Open Sans;
+    font-size: 11px;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+.detai_des li{
+    width: 200px;
+    text-align: left;
+    color: #8a8a8a;
+}
+.detai_des li span{
+    font-weight: bold;
+    text-align: right;
+    float: right;
+}
+
+.load_more{
+    margin: auto;
+    overflow: hidden;
+    width: 171px;
+    height: 49px;
+}
+
+
+
+
+
+

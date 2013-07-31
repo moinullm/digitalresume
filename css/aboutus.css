@@ -1,0 +1,238 @@
+#left_contact_blog{
+    float: left;
+    display: inline;
+    max-width: 675px !important;
+    overflow: hidden;
+}
+
+#right_contact_blog{
+    float:right;
+    display: inline;
+    width: 266px !important;
+    background: #4aa3e0;
+}
+
+.main_con_blog{
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main_content_mid{
+    margin: 27px auto;
+    overflow: hidden;
+    width: 82%;
+}
+
+.main_content_mid  h4{
+   font-family: 'Open Sans';
+   font-weight: normal;
+   color: #fff;
+   font-size: 25px;
+   text-transform: uppercase;
+}
+
+.main_content_mid  h4 span{
+    font-weight: bold;
+    line-height: 23px;
+}
+
+.main_content_mid p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #005791;
+    font-family: 'Open Sans';
+    padding-top: 23px;
+    padding-left: 4px;
+}
+
+.main_content_mid p label{
+    font-size: 20px;
+    font-weight:  normal;
+}
+
+.d_line{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-bottom: 3px solid #005f8d;
+}
+
+.top_blog_1{width: 100%;
+    display: block;
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    background: url(../images/h_bg.png) no-repeat left top;
+    font-size: 14px;
+    color: #fff;
+}
+
+.top_blog_1 li{
+    padding-left: 33px;
+    font-family: 'Open Sans';
+}
+
+.top_blog_2{
+    width: 100%;
+    display: block;
+    margin-top: 18px;
+    font-family: 'Open Sans';
+    background: url(../images/msg_box.png) no-repeat left top;
+    font-size: 14px;
+    height:28px ;
+    color: #fff;
+}
+
+.top_blog_2 li{
+    padding-left: 33px;
+    font-family: 'Open Sans';
+    line-height: 28px;
+}
+.top_blog_3{
+    width: 100%;
+    display: block;
+    margin-top: 18px;
+    font-family: 'Open Sans';
+    background: url(../images/phone.png) no-repeat left top;
+    font-size: 14px;
+    color: #fff;
+}
+
+.top_blog_3 li{
+    padding-left: 33px;
+    font-family: 'Open Sans';
+    line-height: 25px;
+}
+
+.left_contact_blog img{
+    border: 1px solid #b4b9bd;
+    float: left;
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
+.line_border_0{
+    border-color: #CDDFEB -moz-use-text-color -moz-use-text-color;
+    border-style: dotted none none;
+    border-width: 1px medium medium;
+    display: inline;
+    float: left;
+    margin-bottom:20px;
+    width: 100%;
+}
+
+.t_x {
+    color:#005791;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-top: 22px;
+}
+
+.para_s{
+     color:#646566;
+     font-family: 'Open Sans';
+     font-size: 15px;
+     display: block;
+     margin-top: 3px;
+     text-align: justify;
+     padding-bottom: 15px;
+}
+
+.email_f{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.email_f input{
+    background: #fff;
+    border: 1px solid #cccccc;
+    width: 48%;
+    float: left;
+    display: inline;
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: #aeadad;
+    font-size: 13px;
+    height: 31px;
+    text-indent: 5px;
+    margin-top: 2px;
+    margin-bottom: 20px!important;
+    border-radius:0.4em 0.4em 0.4em 0.4em;
+    -moz-border-radius:0.4em 0.4em 0.4em 0.4em;
+    -webkit-border-radius: 0.4em 0.4em 0.4em 0.4em;
+    -khtml-border-radius: 0.4em 0.4em 0.4em 0.4em;
+}
+
+#ple{
+    float: right;
+    display: inline;
+    margin-right: 2px;
+}
+
+#text_blog{
+     width: 99%;
+     overflow: hidden;
+     display: block;
+     font-family: 'Open Sans';
+     font-style: italic;
+     color: #aeadad;
+     font-size: 13px;
+     border: 1px solid #cccccc;
+     border-radius:0.4em 0.4em 0.4em 0.4em;
+     -moz-border-radius:0.4em 0.4em 0.4em 0.4em;
+     -webkit-border-radius: 0.4em 0.4em 0.4em 0.4em;
+     -khtml-border-radius: 0.4em 0.4em 0.4em 0.4em;
+     min-height: 135px;
+     z-index: 10;
+     padding-top: 5px;
+     padding-left: 5px;
+}
+
+#sub_mit_n{
+    background: url(../images/sub_07.jpg) no-repeat;
+    width: 85px;
+    height: 34px;
+    float: right;
+    display: inline;
+    border:none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.top_texth{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans';
+    margin-top: 17px;
+    margin-bottom: 5px;
+}
+
+.paras{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans';
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.parag {
+    width: 100%;
+    text-align: justify;
+    font-size: 15px!important;
+    font-family: 'Open Sans';
+    display: block;
+    color: #646566;
+    margin-bottom: 22px;
+    line-height: 17px;
+}
+
+
+
+
+
+
+
+
