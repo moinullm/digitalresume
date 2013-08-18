@@ -85,6 +85,20 @@ class Index extends CI_Controller
         $this->layout->view('front/public', $data);
     }
 
+    public function signup()
+    {
+        $httpSignup = $this->IndexModel->signup();
+
+        print_r($httpSignup);exit;
+    }
+
+    public function login()
+    {
+        $httpLogin = $this->IndexModel->login();
+
+        print_r($httpLogin);exit;
+    }
+
     public function checkHttpGet()
     {
         $httpGet = $this->IndexModel->checkHttpGet();
