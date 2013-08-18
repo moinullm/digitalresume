@@ -73,6 +73,18 @@ class Index extends CI_Controller
         $this->layout->view('front/gallery', $data);
     }
 
+    public function public_profile($id)
+    {
+        $message = $this->session->flashdata('message');
+        if ($message) {
+            $data['message'] = $message;
+        } else {
+            $data['message'] = "";
+        }
+
+        $this->layout->view('front/public', $data);
+    }
+
     public function checkHttpGet()
     {
         $httpGet = $this->IndexModel->checkHttpGet();

@@ -29,7 +29,7 @@
 <div class="left_sec_input" id="edit_profile_box" style="display: none; width: 500px;">
     <h2>Fill all field</h2>
     <form class="input_field" action="">
-        <label><span >User Name</span><div class="field_name"><p>digitalresume.me/</p><input id="name_inputs" type="text"  placeholder="your name"/></div> </label>
+        <label><span >User Name</span><div class="field_name"><p>digitalresume.me/</p><input id="name_inputs" type="text" placeholder="your name"/></div> </label>
         <label><span>Name</span><input  type="text" placeholder="Name"/></label>
         <label><span>Title</span><input  type="text" placeholder="Title"/></label>
         <label><span>Email</span><input  type="text" placeholder="Email"/></label>
@@ -279,8 +279,8 @@
             <div class="email"><span>jhahidur.rahman@gmail.com</span></div>
             <div class="contact"><span>+8801917009119</span></div>
             <hr class="line_border_2" />
-            <div class="profile_button"><a href="javascript:void(0);"><img src="<?php echo base_url(); ?>images/pro_but.jpg" alt="Profile Button"/></a></div>
-            <hr class="line_border_2" />
+            <div class="profile_button"><a href="<?php echo base_url();?>index.php/index/public_profile/me"><img src="<?php echo base_url(); ?>images/pro_but.jpg" alt="Profile Button"/></a></div>
+            <hr class="line_border_2"/>
             <div class="share_blog">
                 <ul>
                     <li><p>Share With:</p></li>
@@ -323,7 +323,7 @@
             'titleShow'     : true,
             'transitionIn'  : 'elastic',
             'transitionOut' : 'elastic',
-            'width'         : 650,
+            'width'         : 480,
             'height'        : 380,
             'autoDimensions': false,
             'autoSize'      : false

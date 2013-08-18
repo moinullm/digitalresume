@@ -687,7 +687,7 @@ footer{
     background: url(../images/hover.png) no-repeat;
 }
 
-.login_signup{
+#login_signup{
     position: absolute;
     z-index: 1000;
     width: 415px;
@@ -702,7 +702,22 @@ footer{
     -khtml-border-radius: 0.4em 0.4em 0.4em 0.4em;
 }
 
-.login_signup h2{
+#added_class {
+    position: absolute;
+    z-index: 1000;
+    width: 415px;
+    min-height: 416px;
+    margin-top: 88px;
+    right: 193px;
+    padding-bottom: 15px;
+    background: url(../images/ss_03.jpg) repeat-x;
+    border-radius:0.4em 0.4em 0.4em 0.4em;
+    -moz-border-radius:0.4em 0.4em 0.4em 0.4em;
+    -webkit-border-radius: 0.4em 0.4em 0.4em 0.4em;
+    -khtml-border-radius: 0.4em 0.4em 0.4em 0.4em;
+}
+
+#login_signup h2{
     font-family: verdana;
     font-size: 18px;
     color: #fff;

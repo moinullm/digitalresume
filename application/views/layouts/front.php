@@ -10,6 +10,8 @@
         <link href="<?php echo base_url() ?>css/aboutus.css" type="text/css" rel="stylesheet" />
         <link href="<?php echo base_url() ?>css/profile.css" type="text/css" rel="stylesheet" />
         <link href="<?php echo base_url() ?>css/contact.css" type="text/css" rel="stylesheet" />
+        <link href="<?php echo base_url() ?>css/resume.css" type="text/css" rel="stylesheet" />
+
         <script type="text/javascript" src="<?php echo base_url() ?>js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
         <script type="text/javascript" src="<?php echo base_url() ?>js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
@@ -22,6 +24,8 @@
     <script src="<?php echo base_url() ?>js/Open_Sans_Semibold_italic_600.font.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>js/Open_Sans_400.font.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>js/cufon-replace.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>js/cufon-replace-resume1.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>js/Aller_700.font.js" type="text/javascript"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600italic' rel='stylesheet' type='text/css'/>
@@ -66,9 +70,9 @@
 </header><!--header-->
 
 <div class="login_signup" id="signup_form" style="display:none">
-    <h2>Sign Up</h2>
-    <div class="main_login">
-        <form class="login_now">
+    <h2 style="margin: 10px 0px 0px 5px; font-size: 20px; color: white; border-radius: 10px;">Sign Up</h2>
+    <div class="main_login" style="margin-top: -45px; background:  url(<?php echo base_url();?>/images/ss_03.jpg) repeat-x;">
+        <form class="login_now" style="padding-top: 33px; padding-bottom:33px;">
             <div class="field_login_top" ><span>digitalresume.me/</span><input class="field_login" type="text" placeholder="your name"/></div>
             <input class="field_login" type="text" placeholder="Email"/>
             <input class="field_login" type="text" placeholder="Password"/>
@@ -85,9 +89,9 @@
 </div><!--login_signup-->
 
 <div class="login_signup" id="login_form" style="display:none">
-    <h2>Sign In</h2>
-    <div class="main_login">
-        <form class="login_now">
+    <h2 style="margin: 10px 0px 0px 5px; font-size: 20px; padding: 5px; color: white; border-radius: 10px;">Sign In</h2>
+    <div class="main_login" style="margin-top: -45px; background:  url(<?php echo base_url();?>/images/ss_03.jpg) repeat-x;">
+        <form class="login_now" style="padding-top: 33px; padding-bottom:33px;">
             <input class="field_login" type="text" placeholder="Email"/>
             <input class="field_login" type="text" placeholder="Password"/>
             <input type="submit" value="" class="sub_mit_now"/>
@@ -105,18 +109,26 @@
     $('#btnSignin').click(function(){
         $.fancybox({
             'content' : $("#login_form").html(),
-            'titleShow'  : false,
+            'titleShow'  : true,
             'transitionIn'  : 'elastic',
-            'transitionOut' : 'elastic'
+            'transitionOut' : 'elastic',
+            'width'         : 406,
+            'height'        : 410,
+            'autoDimensions': false,
+            'autoSize'      : false
         });
     });
 
     $('#btnSignup').click(function(){
         $.fancybox({
             'content' : $("#signup_form").html(),
-            'titleShow'  : false,
+            'titleShow'  : true,
             'transitionIn'  : 'elastic',
-            'transitionOut' : 'elastic'
+            'transitionOut' : 'elastic',
+            'width'         : 420,
+            'height'        : 520,
+            'autoDimensions': false,
+            'autoSize'      : false
         });
     });
 </script>
@@ -179,7 +191,11 @@
             'content' : $("#signup_form").html(),
             'titleShow'  : false,
             'transitionIn'  : 'elastic',
-            'transitionOut' : 'elastic'
+            'transitionOut' : 'elastic',
+            'width'         : 420,
+            'height'        : 520,
+            'autoDimensions': false,
+            'autoSize'      : false
         });
     });
 
@@ -188,7 +204,11 @@
             'content' : $("#signup_form").html(),
             'titleShow'  : false,
             'transitionIn'  : 'elastic',
-            'transitionOut' : 'elastic'
+            'transitionOut' : 'elastic',
+            'width'         : 420,
+            'height'        : 520,
+            'autoDimensions': false,
+            'autoSize'      : false
         });
     });
 </script>

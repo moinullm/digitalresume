@@ -163,7 +163,7 @@
 }
 
 .input_field label span{
-    width: 179px;
+    width: 97px;
     float: left;
     font-family: 'Open Sans',sans-serif;
     display: inline;
@@ -172,7 +172,7 @@
 }
 
 .input_field input{
-    width: 425px;
+    width: 300px;
     overflow: hidden;
     height: 50px;
     border: 1px solid #cddfeb;
@@ -184,7 +184,7 @@
 }
 
 .input_field textarea{
-    width:425px;
+    width:300px;
     overflow: hidden;
     min-height: 100px;
     border: 1px solid #cddfeb;
@@ -204,6 +204,7 @@
     width: 208px!important;
     overflow: hidden;
 }
+
 #submit_button, #submit_button_1, #submit_button_profile, #submit_button_2, #submit_button_3, #submit_button_4, #submit_button_5, #submit_button_6, #submit_button_7, #submit_button_8{
     background: url(../images/add.jpg) no-repeat;
     border: medium none;
@@ -395,8 +396,8 @@
     display: block;
     font-family: 'Open Sans';
     height: 29px;
-    padding-bottom: 4px;
-    width: 64px;
+    width:  auto;
+    padding: 0px 11px 5px 5px;
     text-align: center;
     float: left;
     margin-left: 180px;
@@ -544,7 +545,7 @@
     height: 50px;
     overflow: hidden;
     text-indent: 5px;
-    width: 425px;
+    width: 300px;
     margin-top: 0px;
     line-height: 30px;
 }
@@ -563,7 +564,7 @@
     overflow: hidden;
     text-indent: -1;
     height: 40px;
-    width: 280px;
+    width: 160px;
 }
 
 .field_user_name{
