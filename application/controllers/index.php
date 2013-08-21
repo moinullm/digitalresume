@@ -87,9 +87,11 @@ class Index extends CI_Controller
 
     public function signup()
     {
-        $httpSignup = $this->IndexModel->signup();
+        echo $_POST['p_key'].'-'.$_POST['email'].'-'.$_POST['password'].'-'.$_POST['c_password']; die;
 
-        print_r($httpSignup);exit;
+        /*$httpSignup = $this->IndexModel->signup();
+
+        print_r($httpSignup);exit;*/
     }
 
     public function login()

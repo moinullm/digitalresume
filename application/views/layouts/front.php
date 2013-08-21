@@ -72,12 +72,12 @@
 <div class="login_signup" id="signup_form" style="display:none">
     <h2 style="margin: 10px 0px 0px 5px; font-size: 20px; color: white; border-radius: 10px;">Sign Up</h2>
     <div class="main_login" style="margin-top: -45px; background:  url(<?php echo base_url();?>/images/ss_03.jpg) repeat-x;">
-        <form class="login_now" style="padding-top: 33px; padding-bottom:33px;">
-            <div class="field_login_top" ><span>digitalresume.me/</span><input class="field_login" type="text" placeholder="your name"/></div>
-            <input class="field_login" type="text" placeholder="Email"/>
-            <input class="field_login" type="text" placeholder="Password"/>
-            <input class="field_login" type="text" placeholder="Confirm Password"/>
-            <input type="submit"  value="" id="sub_mit_now"/>
+        <form method="post" action="" class="login_now" id="frm_signup" style="padding-top: 33px; padding-bottom:33px;">
+            <div class="field_login_top"><span>digitalresume.me/</span><input id="p_key" name="p_key" class="field_login" type="text" placeholder="your name"/></div>
+            <input name="email" id="email" value="" class="field_login" type="text" placeholder="Email"/>
+            <input name="password" id="password" value="" class="field_login" type="password" placeholder="Password"/>
+            <input name="c_password" id="c_password" value="" class="field_login" type="password" placeholder="Confirm Password"/>
+            <input type="button" value="" class="sub_mit_now btn_signup"/>
             <div class="orr"><img  src="<?php echo base_url() ?>images/orr_03.jpg" alt="OR"/></div>
             <div class="left_soci"><a href="#"><img src="<?php echo base_url() ?>images/sci1.png" alt="fb" /></a></div>
             <div class="right_soci"><a href="#"><img src="<?php echo base_url() ?>images/sci2.jpg" alt="fb" /></a></div>
@@ -94,7 +94,7 @@
         <form class="login_now" style="padding-top: 33px; padding-bottom:33px;">
             <input class="field_login" type="text" placeholder="Email"/>
             <input class="field_login" type="text" placeholder="Password"/>
-            <input type="submit" value="" class="sub_mit_now"/>
+            <input type="button" value="" class="sub_mit_now"/>
             <div class="orr"><img  src="<?php echo base_url() ?>images/orr_03.jpg" alt="OR"/></div>
             <div class="left_soci1"><a  href="#"><img src="<?php echo base_url() ?>images/sci1.png" alt="fb" /></a></div>
             <div class="right_soci1"><a  href="#"><img src="<?php echo base_url() ?>images/sci2.jpg" alt="fb" /></a></div>
@@ -129,6 +129,24 @@
             'height'        : 520,
             'autoDimensions': false,
             'autoSize'      : false
+        });
+
+        $('.btn_signup').click(function() {
+            var p_key = $('div#fancybox-content #p_key').val();
+            var email = $('div#fancybox-content #email').val();
+            var password = $('div#fancybox-content #password').val();
+            var c_password = $('div#fancybox-content #c_password').val();
+
+            $.ajax({
+             type: 'POST',
+             data: 'p_key=' + p_key + '&email=' + email + '&password=' + password + '&c_password=' + c_password,
+             success: function(response) {
+                 $.fancybox.close();
+             },
+             error: function(){ alert('Unsuccessfull post'); },
+             url: '<?php echo base_url() ?>index.php/index/signup',
+             cache:false
+             });
         });
     });
 </script>
